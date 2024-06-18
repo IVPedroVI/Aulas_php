@@ -8,15 +8,17 @@
 <body>
     <?php 
         class Usuario {
+            //Atributos da classe
             public $nome;
             protected $cpf;
             private $endereco;
         
-            // Construtor da classe Usuario
+            // Construtor da classe
             function __construct() {
                 $this->preparaUsuario();
             }
         
+            //Métodos
             private function preparaUsuario() {
                 $this->nome = "Leonardo";
                 $this->cpf = "99999999999";
@@ -36,10 +38,9 @@
             }
         }
         
-        // Criando uma instância da classe Usuario
+        // Instanciando o bjeto e acessando seus respectivos métodos
         $usu = new Usuario();
         
-        // Exemplo de uso dos métodos da classe Usuario
         echo "Nome: " . $usu->getNome() . "<br>";
         echo "CPF: " . $usu->getCpf() . "<br>";
         echo "Endereço: " . $usu->getEndereco() . "<br>";

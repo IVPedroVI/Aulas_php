@@ -11,6 +11,8 @@
         while ($num < 10) {
             echo $num++;
         }
-    ?>
+        
+        // 0123456789
+   ?>
 </body>
 </html>
